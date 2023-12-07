@@ -1,82 +1,81 @@
-*
-{
-    padding:0px;
-    margin:0px;
+* {
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    --navbar_color2:#002244;
-    --navbar_color:#00BFFF;
-    --body_color:#F0F8FF;
-    --text_color:white;
-    --chooseFile_color:#6CB4EE;
-    --background_color:#f3f3f3 ;
-    --foot_color:#051e3d;
-    
+    --navbar_color2: #002244;
+    --navbar_color: #00BFFF;
+    --body_color: #F0F8FF;
+    --text_color: white;
+    --chooseFile_color: #6CB4EE;
+    --background_color: #f3f3f3;
+    --foot_color: #051e3d;
+
 }
-.nav_option a
-{
-    color:var(--body_color);
+
+.nav_option a {
+    color: var(--body_color);
     text-decoration: none;
 }
-body
-{
+
+body {
     background-color: var(--background_color);
-    color:var(--text_color)
+    color: var(--text_color)
 }
-nav
-{
+
+nav {
     height: 4rem;
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-   background-color: var(--navbar_color2);
+    background-color: var(--navbar_color2);
 }
-nav li
-{
+
+nav li {
     list-style: none;
     display: inline;
 }
-.nav_logo
-{
-    margin:1rem;
-    font-size:x-large;
+
+.nav_logo {
+    margin: 1rem;
+    font-size: x-large;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav_logo ul li img
-{
+
+.nav_logo ul li img {
     width: 3rem;
     height: auto;
     border-radius: 50%;
 }
-.nav_logo ul > li
-{
+
+.nav_logo ul>li {
     margin-right: 1rem;
 }
-.nav_option 
-{
+
+.nav_option {
     margin: 1rem;
     font-size: large;
 }
-.nav_option ul li
-{
-    margin-right:1rem;
+
+.nav_option ul li {
+    margin-right: 1rem;
 }
-.nav_option i
-{
+
+.nav_option i {
     margin-left: 1rem;
 }
-#remaning_hour
-{
+
+#remaning_hour {
     background-color: black;
     padding: 0.5rem;
-    border:2px dotted white;
+    border: 2px dotted white;
     border-radius: 1rem;
 }
-.main
-{
+
+.main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -84,39 +83,37 @@ nav li
     height: 50vh;
     color: black;
 }
-.text
-{
-    text-align: center;
-    font-size:medium;
-    font-style: italic;
-}
-#file
-{
 
+.text {
+    text-align: center;
+    font-size: medium;
+    font-style: italic;
+    text-wrap: wrap-reverse;
+}
+#file 
+{
     display: flex;
     justify-content: center;
-
 }
-.choosefile
-{
-    padding:2rem;
-    margin:1rem;
-    border:3px dotted rgb(32, 28, 28);
+
+.choosefile {
+    padding: 1.8rem;
+    border: 3px dotted rgb(32, 28, 28);
     border-radius: 0.5rem;
     background-color: #efeef3;
     width: 65%;
     text-align: center;
-    font-size:x-large;
+    font-size: 1.6em;
     display: flex;
     justify-content: center;
 }
-i
-{
+
+i{
     margin-right: 0.5rem;
     color: #F0F8FF;
 }
-.choose
-{
+
+.choose {
     background-color: rgb(0, 0, 0);
     width: 13rem;
     height: 4rem;
@@ -125,20 +122,59 @@ i
     align-items: center;
     border-radius: 0.5rem;
 }
-.foot
-{
+
+.foot {
     position: absolute;
     width: 100vw;
     height: 3rem;
-    background-color:var(--foot_color);
+    background-color: var(--foot_color);
     bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:var(--text_color);
+    color: var(--text_color);
 }
-.choose a
-{
-    color:var(--chooseFile_color);
+
+.choose a {
+    color: var(--chooseFile_color);
     text-decoration: none;
+}
+
+@media screen and (min-width :450px) and (max-width:610px) {
+    nav {
+        height: 3rem;
+    }
+
+    .nav_logo {
+        font-size: large;
+    }
+
+    .nav_logo ul li img {
+        width: 2rem;
+    }
+
+    .text {
+        font-size:smaller;
+    }
+    .nav_option {
+        font-size: 0.7rem;
+    }
+    .choose
+    {
+        height: 3rem;
+    }
+    .choosefile{
+        font-size: large;
+    }
+    .nav_option ul li {
+        margin-right: 0.8rem;
+    }
+    
+    .nav_option i {
+        margin-left: 0rem;
+    }
+    .foot
+    {
+        font-size: small;
+    }
 }
