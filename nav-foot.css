@@ -1,0 +1,198 @@
+.nav_option a {
+    color: var(--body_color);
+    text-decoration: none;
+}
+nav {
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--navbar_color2);
+}
+#myLinks
+{
+    display: none;
+}
+#myLinks a
+{
+    color:black;
+    padding:0.3em;
+    display: block;
+    text-decoration: none;
+    background-color:rgb(81, 130, 228);
+    border:2px solid black;
+    border-radius: 3px;
+}
+nav li {
+    list-style: none;
+    display: inline;
+}
+
+.nav_logo {
+    margin: 1rem;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_option ul li:nth-child(6) {
+    display: none;
+}
+/* .nav_option ul li Button
+{
+    background-color:var(--navbar_color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:0.7rem;
+    height: 0.7rem;
+} */
+
+.nav_logo ul li img {
+    width: 3rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.nav_logo ul>li {
+    margin-right: 1rem;
+}
+
+.nav_option {
+    margin: 1rem;
+    font-size: large;
+}
+
+.nav_option ul li {
+    margin-right: 1rem;
+}
+
+.nav_option i {
+    margin-left: 1rem;
+}
+
+#remaning_hour {
+    background-color: black;
+    padding: 0.5rem;
+    border: 2px dotted white;
+    border-radius: 1rem;
+}
+
+@media screen and (min-width :460px) and (max-width:610px) {
+    nav {
+        height: 3rem;
+    }
+
+    .nav_logo {
+        font-size: large;
+    }
+
+    .nav_logo ul li img {
+        width: 2rem;
+    }
+
+    .nav_option {
+        font-size: 0.8rem;
+    }
+
+    .nav_option ul li {
+        margin-right: 0.8rem;
+    }
+
+    .nav_option i {
+        margin-left: 0rem;
+    }
+
+    .foot {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width:460px) and (min-width:300px)
+{
+    .info
+    {
+        display: none;
+    }
+    .nav_option ul li {
+        margin-right: 0px;
+    }
+    #remaning_hour
+    {
+        font-size: small;
+        padding: 0.3rem;
+        font-size: 0.6rem;
+    }
+    .nav_logo
+    {
+        width: 9rem;
+    }
+    .nav_option
+    {
+        width: 10rem;
+        display: flex;
+        justify-content: end;
+    }
+    .nav_option i {
+        margin-left: 0.4rem;
+        font-size: medium;
+    }
+    .nav_option ul li:nth-child(6)
+    {
+        display: inline;
+    }
+    .nav_logo {
+        font-size: 1.1rem;
+    }
+    .nav_logo ul li img {
+        width: 1.8rem;
+    }
+    .foot
+    {
+        font-size:0.7rem;
+    }
+}
+@media screen and (min-width :0px) and (max-width:300px) {
+    .info
+    {
+        display: none;
+    }
+    .nav_option ul li {
+        margin-right: 0px;
+    }
+    #remaning_hour
+    {
+        font-size: small;
+        padding: 0.2rem;
+        font-size: 0.5rem;
+    }
+    .nav_logo
+    {
+        width: 8.2rem;
+    }
+    .nav_option
+    {
+        width: 10rem;
+        display: flex;
+        justify-content: end;
+    }
+    .nav_option i {
+        margin-left: 0.3rem;
+        font-size: small;
+    }
+    .nav_option ul li:nth-child(6)
+    {
+        display: inline;
+    }
+    .nav_logo {
+        font-size: 1.1rem;
+    }
+    .nav_logo ul li img {
+        width: 1.8rem;
+    }
+    .foot
+    {
+        font-size:0.7rem;
+    }
+}

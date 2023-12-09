@@ -10,77 +10,17 @@
     --chooseFile_color: #6CB4EE;
     --background_color: #f3f3f3;
     --foot_color: #051e3d;
-
-}
-
-.nav_option a {
-    color: var(--body_color);
-    text-decoration: none;
 }
 
 body {
     background-color: var(--background_color);
     color: var(--text_color)
 }
-
-nav {
-    height: 4rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--navbar_color2);
-}
-
-nav li {
-    list-style: none;
-    display: inline;
-}
-
-.nav_logo {
-    margin: 1rem;
-    font-size: x-large;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav_logo ul li img {
-    width: 3rem;
-    height: auto;
-    border-radius: 50%;
-}
-
-.nav_logo ul>li {
-    margin-right: 1rem;
-}
-
-.nav_option {
-    margin: 1rem;
-    font-size: large;
-}
-
-.nav_option ul li {
-    margin-right: 1rem;
-}
-
-.nav_option i {
-    margin-left: 1rem;
-}
-
-#remaning_hour {
-    background-color: black;
-    padding: 0.5rem;
-    border: 2px dotted white;
-    border-radius: 1rem;
-}
-
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     width: 100%;
-    height: 50vh;
+    height: 100%;
     color: black;
 }
 
@@ -89,11 +29,13 @@ nav li {
     font-size: medium;
     font-style: italic;
     text-wrap: wrap-reverse;
+    margin-top: 1.5%;
 }
 #file 
 {
     display: flex;
     justify-content: center;
+    margin-top:7%;
 }
 
 .choosefile {
@@ -124,6 +66,7 @@ i{
 }
 
 .foot {
+    font-size: large;
     position: absolute;
     width: 100vw;
     height: 3rem;
@@ -135,46 +78,47 @@ i{
     color: var(--text_color);
 }
 
-.choose a {
+.choose p{
     color: var(--chooseFile_color);
     text-decoration: none;
 }
-
+.choose label
+{
+    display: flex;
+}
 @media screen and (min-width :450px) and (max-width:610px) {
-    nav {
-        height: 3rem;
-    }
-
-    .nav_logo {
-        font-size: large;
-    }
-
-    .nav_logo ul li img {
-        width: 2rem;
-    }
-
+   
     .text {
-        font-size:smaller;
-    }
-    .nav_option {
-        font-size: 0.7rem;
+        font-size:small;
     }
     .choose
+    {
+        height: 3rem;
+    }
+    .choosefile label
     {
         height: 3rem;
     }
     .choosefile{
         font-size: large;
     }
-    .nav_option ul li {
-        margin-right: 0.8rem;
-    }
-    
-    .nav_option i {
-        margin-left: 0rem;
-    }
-    .foot
+}
+@media screen and (min-width :200px) and (max-width:449px)
+{
+    .text
     {
-        font-size: small;
+        font-size: 0.8em;
+    }
+    .choose
+    {
+        height: 3rem;
+        width: 8.2rem;
+    }
+    .choosefile{
+        font-size: medium;
+    }
+    .choose i
+    {
+        font-size: 1rem;
     }
 }
